@@ -63,3 +63,9 @@ Create a db and a user. Grant access to the db for the user.
 create schema stackoverflow;
 create user 'raymond129'@'%' identified by 'TuffGuez%3#a';
 grant all on stackoverflow.* to 'raymond129'@'%';
+
+
+Further Notes
+----------------
+URL01: https://dev.mysql.com/downloads/repo/yum
+URL02: https://dev.mysql.com/doc/mysql-repo-excerpt/5.6/en/linux-installation-yum-repo.html
