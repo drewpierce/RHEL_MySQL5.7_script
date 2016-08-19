@@ -1,0 +1,65 @@
+Step 2: install wget:
+Go to /home/ec2-user
+sudo yum install wget
+accept the prompt after a while with a Y
+
+Step 3: Download the MySQL Yum Repository (see URL01) but described below:
+See capture00b.jpg
+Still in /home/ec2-user, we now use wget
+wget http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
+
+Step 4: Work with the Yum repository file (see URL02) but described below.
+Now that we have the rpm local in our home dir, we install it with a y to confirm:
+sudo yum localinstall mysql57-community-release-el7-8.noarch.rpm
+The above installation command adds the MySQL Yum repository to your system's repository list and downloads the GnuPG key to check the integrity of the software packages.
+Now actually install the server:
+sudo yum install mysql-community-server
+Hit y to confirm a few times, over 30 packages (?) are installed including the server, the client, common, libs, perl, etc
+
+Confirm the status with the following sudo cmd:
+sudo service mysqld status
+Redirecting to /bin/systemctl status  mysqld.service
+● mysqld.service - MySQL Server
+   Loaded: loaded (/usr/lib/systemd/system/mysqld.service; enabled; vendor preset: disabled)
+
+ 
+
+Step 5: Start the mysql server. Get the generated password.
+sudo service mysqld start
+Step 6: Retrieve the generated root password from the error log file:
+sudo grep 'temporary password' /var/log/mysqld.log
+2016-08-18T14:48:50.407812Z 1 [Note] A temporary password is generated for root@localhost: _qBFz6DV*u/l
+
+
+Step 6: Login to server using above password shown. Note, your password will be different! And change password for root:
+mysql –uroot –p
+Welcome to MySQL 5.7.14
+Try any command like
+select now(); -- this won’t work until you change the password
+To see that you are frozen until you change the password, which we do below:
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'muzBost&i3^meoW7bowWow';
+
+Confirm the password is hashed:
+mysql> select user,host,authentication_string from mysql.user;
++-----------+-----------+-------------------------------------------+
+| user      | host      | authentication_string                     |
++-----------+-----------+-------------------------------------------+
+| root      | localhost | *4AD7114E775A3A76521E68B185C26527A43BBEC6 |
++-----------+-----------+-------------------------------------------+
+
+
+Confirm version and directories:
+mysql> select @@version,@@basedir,@@datadir;
++-----------+-----------+-----------------+
+| @@version | @@basedir | @@datadir       |
++-----------+-----------+-----------------+
+| 5.7.14    | /usr/     | /var/lib/mysql/ |
++-----------+-----------+-----------------+
+1 row in set (0.00 sec)
+
+ 
+
+Create a db and a user. Grant access to the db for the user.
+create schema stackoverflow;
+create user 'raymond129'@'%' identified by 'TuffGuez%3#a';
+grant all on stackoverflow.* to 'raymond129'@'%';
