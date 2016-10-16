@@ -1,0 +1,108 @@
+Samantha K.
+Thank you for chatting with us! How may I help you today?
+
+Visitor
+Do you offer mysql databases like amazon AWS RDS?
+
+Samantha K.
+We have hosting that has MySQL databases within, but not MySQL databases on their own
+
+Visitor
+How does one set it up and all that
+
+Samantha K.
+What will you be using the database for?
+
+Visitor
+various mysql needs for clients. PHP perhaps. Direct connect is most desirable though without that restriction. Like RDS
+So a server instance with mysql that allows for connections on port 3306 or whatnot
+
+Samantha K.
+We could probably set you up on Ultimate Cpanel and you would be fine with that
+
+Visitor
+direct connect from the outside on that port or does it require IP whitelisting? How much does that cost? Is it limited compared to VPS?
+
+Samantha K.
+It requires IP whitelisting, its about $287 for three years, locking in a 50% discount. It is shared hosting so yes it will be limited compared to a Virtual Private Server
+
+Visitor
+what is the price for VPS? Or is that the page that shows $20 a month for 40GB that might also have mysql on it? Basically the cloud servers web page of yours that is a bit confusing to me at least
+
+Samantha K.
+I'm not sure where you're getting that pricing, our 1gb RAM with 40GB storage is 29.99/month if you don't have our team manage it for you
+
+Visitor
+https://www.godaddy.com/pro/cloud-servers
+
+Samantha K.
+I don't recommend cloud servers unless A.) you're developing constantly, or B.) you know how to command line in because there is no control panel or anything to help o nthat
+on that *
+
+Visitor
+ok we certainly dont need a team to manage it for us. We just want a server like VPS that is powerful. At least 1GB RAM without feeling like we will get an email saying our users are using it too much and Go Away !
+
+Samantha K.
+Our 1gb RAM with 40GB storage is 29.99/month would probably be best then
+
+Visitor
+And that includes mysql? And that can be accessed remotely with IP whitelist only?
+
+Samantha K.
+You can do with or without IP whitelisting on a Virtual Private Server. And yes MySQL comes with it
+Visitor
+ok thanks.
+ Read
+
+Samantha K.
+8:48 pm
+Do you want me to get you set up on this? As we do have better discounts for annual terms
+
+Visitor
+Are we talking VPS and not Cloud Servers? What is your webpage link on it so I can see the price retail?
+ Read
+
+Samantha K.
+Correct, https://www.godaddy.com/pro/managed-vps
+
+Visitor
+so if I went with your 3GB 90GB VPS and committed to a longer term you have a discount if I pay up front or commit?
+And as it is a VPS if I so desired I could have apache or java/tomcat servers on it if I install it?
+
+Samantha K.
+Yes we have bigger discounts the longer you do
+And yes you can install those options as well
+
+Visitor
+8:56 pm
+Alright, no rush, I am sure you have a lot of people in chat now. Just let me know the price for longer term, and whether or not "options" means same price, and if I have full control over the server to put new versions of java or whatever on at my discretion
+
+Samantha K.
+8:59 pm
+You can install any program that works with an apache system, so tomcat/java are ones you can install and its like your own playground to do what you want :) And 1 year would be $453.26, saving you $249.99. Or did you want me to go longer than that?
+
+Visitor
+ok
+
+Samantha K.
+Did you want to go with the one year, or do more?
+
+Visitor
+so it is a linux server I can install different versions of java on and ssh into it and do whatever I want? Mess it up completely and save off images or how does backup work and restore
+
+Samantha K.
+You would have to do your own back ups, if you wanted us to manage your back ups that is additional, but essentially yes
+
+Visitor
+ok. I will copy and paste all this into a document and talk to my clients. Thanks.
+
+Samantha K.
+Well when you're ready if you'd like to set it up with me you can email me at sknight@GoDaddy.com
+
+Visitor
+ok thx Samantha. Over and out
+ Read
+
+Samantha K.
+Thank you for chatting with us. We value your feedback. Please click the Close button at top right to answer a few questions about your experience with us today.
+
